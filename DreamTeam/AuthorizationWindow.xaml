@@ -1,0 +1,19 @@
+﻿<Window x:Class="DreamTeam.AuthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:DreamTeam"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="364.916" Width="485.333" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" >
+    <Grid RenderTransformOrigin="0.925,-0.047" Margin="0,0,4,-1">
+
+
+        <Button Grid.Column="0" Content="Войти" Click="AuthorizationClick" Margin="156,275,120,22" Height="Auto" Width="Auto" IsDefault="True"/>
+        <TextBox Name="login" materialDesign:HintAssist.Hint="Введите логин" HorizontalAlignment="Left" Height="30" Margin="149,163,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="211" RenderTransformOrigin="0.708,-0.781"/>
+        <PasswordBox Name="password" materialDesign:HintAssist.Hint="Введите пароль" HorizontalAlignment="Left" Height="30" Margin="149,224,0,0"  VerticalAlignment="Top" Width="211" RenderTransformOrigin="1.692,2.739"/>
+        <Image Margin="142,5,115,179" Source="независимая-инвентаризация[1].png" Stretch="Fill" RenderTransformOrigin="0.611,0.536" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Grid.Column="0" Content="Выйти" Click="Authorization123Click" Margin="509,199,-233,98" Height="Auto" Width="Auto" IsCancel="True"/>
+    </Grid>
+</Window>

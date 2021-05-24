@@ -1,0 +1,25 @@
+﻿<Window x:Class="DreamTeam.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:DreamTeam"
+        mc:Ignorable="d"
+        Title="Меню" Height="371.583" Width="457.333" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="White">
+    <Grid Margin="0,0,4,0" RenderTransformOrigin="1.061,0.877">
+        <Button Grid.Column="0" Name ="KB11" Content="Кабинет 1" Click="KB1" Margin="135,10,113,286" Height="Auto" Background="#FF23A1BD" BorderBrush="#FF531293"/>
+        <Button Grid.Column="0" Name ="KB22" Content="Кабинет 2" Click="KB2" Margin="135,62,113,234" Height="Auto" Background="#FF23A1BD" BorderBrush="#FF531293"/>
+        <Button Grid.Column="0" Name ="KB33" Content="Кабинет 3" Click="KB3" Margin="135,114,113,182" Height="Auto" Background="#FF23A1BD" BorderBrush="#FF531293"/>
+        <Button Grid.Column="0" Name ="BD" Content="База данных" Click="BD1" Margin="135,166,113,130" Height="Auto" BorderBrush="#FF531293" Background="#FF23A1BD"/>
+        <Button Grid.Column="0" Content="Сменить пользователя" Click="CHANGE" Margin="135,240,113,56" Height="Auto" FontSize="14" BorderBrush="#FF531293">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF23A1BD" Offset="1"/>
+                    <GradientStop Color="#FF5834B8"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
