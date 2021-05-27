@@ -135,6 +135,15 @@
     <Compile Include="Room3Window.xaml.cs">
       <DependentUpon>Room3Window.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SealWindow.xaml.cs">
+      <DependentUpon>SealWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SealWindow2.xaml.cs">
+      <DependentUpon>SealWindow2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SealWindow3.xaml.cs">
+      <DependentUpon>SealWindow3.xaml</DependentUpon>
+    </Compile>
     <Compile Include="User.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
@@ -165,6 +174,18 @@
     <Page Include="Room3Window.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SealWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SealWindow2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SealWindow3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
