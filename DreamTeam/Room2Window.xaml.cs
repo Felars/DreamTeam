@@ -147,7 +147,7 @@ namespace DreamTeam
         private void Sy_Click(object sender, RoutedEventArgs e)
         {
             db = new BaseEntities();
-            Numbers.ItemsSource = db.Room2.Where(o => o.Object == "System unit").ToList();
+            Numbers.ItemsSource = db.Room2.Where(o => o.Object == "Unit system").ToList();
         }
 
         private void Key_Click(object sender, RoutedEventArgs e)
