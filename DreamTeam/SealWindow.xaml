@@ -1,0 +1,57 @@
+﻿<Window x:Class="DreamTeam.SealWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+         xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:DreamTeam"
+        mc:Ignorable="d"
+        Title="Печать" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid Name="Grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="787*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="Numbers" HorizontalAlignment="Left" AutoGenerateColumns="False" 
+            Height="318" Margin="112,26,0,0" VerticalAlignment="Top" Width="557" Background="White" Grid.Column="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Object}" Header="Имущество" Width="1.2*"/>
+                <DataGridTextColumn Binding="{Binding Number}" Header="Инвентаризационный номер" Width="2*"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <TextBlock HorizontalAlignment="Left" Margin="549,369,0,0" TextWrapping="Wrap" Text="Дата:" VerticalAlignment="Top" Width="56" Height="42" FontSize="14" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.119"/>
+                    <RotateTransform Angle="0.111"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="93,369,0,0" TextWrapping="Wrap" Text="Всего имущества:" VerticalAlignment="Top" Width="125" Height="25" FontSize="14" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.16"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="219,368,0,0" TextWrapping="Wrap" x:Name ="AllCount" VerticalAlignment="Top" Width="54"  BorderBrush="White" Grid.Column="1"/>
+
+        <TextBlock Text="{Binding Source={x:Static sys:DateTime.Today},   
+       StringFormat='{}{0:dddd, MMMM dd, yyyy}'}" Margin="595,369,20,10" Grid.Column="1" FontSize="14"/>
+        <Button Content="Печать" Margin="296,369,294,10" Height="Auto" Width="Auto" IsDefault="True" FontSize="18" Click="Print_Click" Grid.Column="1"/>
+        <Button Grid.Column="1" Content="Меню" Click="Menu" Margin="674,10,10,364" Height="Auto" FontSize="14" BorderBrush="#FF531293">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF23A1BD" Offset="1"/>
+                    <GradientStop Color="#FF5834B8"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
