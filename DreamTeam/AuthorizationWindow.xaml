@@ -13,6 +13,7 @@
         <Button Grid.Column="0" Content="Войти" Click="AuthorizationClick" Margin="156,275,120,22" Height="Auto" Width="Auto" IsDefault="True"/>
         <TextBox Name="login" materialDesign:HintAssist.Hint="Введите логин" HorizontalAlignment="Left" Height="30" Margin="149,163,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="211" RenderTransformOrigin="0.708,-0.781"/>
         <PasswordBox Name="password" materialDesign:HintAssist.Hint="Введите пароль" HorizontalAlignment="Left" Height="30" Margin="149,224,0,0"  VerticalAlignment="Top" Width="211" RenderTransformOrigin="1.692,2.739"/>
+        <Button Grid.Column="0" Content="Выйти" Click="Authorization123Click" Margin="509,199,-233,98" Height="Auto" Width="Auto" IsCancel="True"/>    
         <Image Margin="142,5,115,179" Source="независимая-инвентаризация[1].png" Stretch="Fill" RenderTransformOrigin="0.611,0.536" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
 </Window>
