@@ -43,7 +43,7 @@
         <TextBox x:Name ="AllCount" HorizontalAlignment="Left" Height="25" Margin="219,368,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54"  BorderBrush="White" Grid.Column="1"/>
 
         <TextBlock x:Name="Time" Text="{Binding Source={x:Static sys:DateTime.Today},   
-       StringFormat='{}{0:dddd, MMMM dd, yyyy}'}" Margin="595,369,20,10" Grid.Column="1" FontSize="14"/>
+       StringFormat='{}{0:dd.MM.yyyy}'}" Margin="595,369,20,10" Grid.Column="1" FontSize="14"/>
         <Button Content="Печать" Margin="296,369,294,10" Height="Auto" Width="Auto" IsDefault="True" FontSize="18" Click="Print_Click" Grid.Column="1"/>
         <Button Grid.Column="1" Content="Меню" Click="Menu" Margin="674,10,10,364" Height="Auto" FontSize="14" BorderBrush="#FF531293">
             <Button.Background>
