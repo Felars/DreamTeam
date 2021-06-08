@@ -38,7 +38,7 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="85,241,0,0" TextWrapping="Wrap" x:Name="TableCount" VerticalAlignment="Top" Width="54" BorderBrush="White"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="85,290,0,0" TextWrapping="Wrap" x:Name="ChairCount" VerticalAlignment="Top" Width="54" BorderBrush="White"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="85,333,0,0" TextWrapping="Wrap" x:Name="RouterCount" VerticalAlignment="Top" Width="54" BorderBrush="White"/>
-        <Button Content="Назад" Margin="21,374,574,5" Height="Auto" Width="Auto" IsDefault="True" FontSize="18" Click="Button_Click" Name="Menus"/>
-        <Button Content="Печать" Margin="574,374,21,5" Height="Auto" Width="Auto" IsDefault="True" FontSize="18" Click="Print_Click" Name="Print"/>
+        <Button Content="Назад" Margin="21,374,574,5" Height="Auto" Width="Auto" IsDefault="True" FontSize="18" Click="Button_Click"/>
+        <Button Content="Печать" Margin="574,374,21,5" Height="Auto" Width="Auto" IsDefault="True" FontSize="18" Click="Print_Click"/>
     </Grid>
 </Window>
