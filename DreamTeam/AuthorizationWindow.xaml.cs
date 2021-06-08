@@ -48,6 +48,8 @@ namespace DreamTeam
             else
             {
                 MessageBox.Show("Ошибка логина/пароля", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                login.Clear();
+                password.Clear();
                 return;
 
             }
