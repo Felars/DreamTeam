@@ -48,7 +48,7 @@ namespace DreamTeam
             else
             {
                 MessageBox.Show("Ошибка логина/пароля", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-
+                return;
 
             }
             MainWindow mainwindow = new MainWindow();
