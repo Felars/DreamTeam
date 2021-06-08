@@ -44,8 +44,8 @@
 
         <TextBlock Text="{Binding Source={x:Static sys:DateTime.Today},   
        StringFormat='{}{0:dd.MM.yyyy}'}" Margin="595,369,20,10" Grid.Column="1" FontSize="14"/>
-        <Button Content="Печать" Margin="296,369,294,10" Height="Auto" Width="Auto" IsDefault="True" FontSize="18" Click="Print_Click" Grid.Column="1"/>
-        <Button Grid.Column="1" Content="Меню" Click="Menu" Margin="674,10,10,364" Height="Auto" FontSize="14" BorderBrush="#FF531293">
+        <Button Content="Печать" Margin="296,369,294,10" Height="Auto" Width="Auto" IsDefault="True" FontSize="18" Click="Print_Click" Grid.Column="1" Name="Print"/>
+        <Button Grid.Column="1" Content="Меню" Click="Menu" Margin="674,10,10,364" Height="Auto" FontSize="14" BorderBrush="#FF531293" Name="Menus">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF23A1BD" Offset="1"/>
