@@ -43,13 +43,16 @@ namespace DreamTeam
             db = new BaseEntities();
             Numbers.ItemsSource = db.Room1.ToList();
         }
-
         private void Print_Click(object sender, RoutedEventArgs e)
         {
+            Print.Visibility = Visibility.Hidden;
+            Menus.Visibility = Visibility.Hidden;
             PrintDialog printDialog = new PrintDialog();
             if (printDialog.ShowDialog() == true)
             {
                 printDialog.PrintVisual(Grid, "Печать");
+                Print.Visibility = Visibility.Visible;
+                Menus.Visibility = Visibility.Visible;
             }
         }
 
