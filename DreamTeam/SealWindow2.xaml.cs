@@ -46,10 +46,14 @@ namespace DreamTeam
 
         private void Print_Click(object sender, RoutedEventArgs e)
         {
+            Print.Visibility = Visibility.Hidden;
+            Menus.Visibility = Visibility.Hidden;
             PrintDialog printDialog = new PrintDialog();
             if (printDialog.ShowDialog() == true)
             {
                 printDialog.PrintVisual(Grid2, "Печать");
+                Print.Visibility = Visibility.Visible;
+                Menus.Visibility = Visibility.Visible;
             }
         }
 
